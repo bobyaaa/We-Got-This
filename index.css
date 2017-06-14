@@ -1,0 +1,52 @@
+﻿body {
+animation: colorchange 5s;
+-webkit-animation: colorchange 5s;
+}
+
+div {
+position: relative;
+animation-name: move;
+animation-duration: 5s; 
+-webkit-animation: move; 
+-webkit-animation-duration: 5s; 
+
+font-family: impact, verdana, sans-serif; 
+text-align: center; 
+letter-spacing: 0.08em;
+text-transform: uppercase;
+font-size: 72px;
+}
+
+@keyframes colorchange {
+      0%   {background-color: lightblue;}
+      25%  {background-color: springgreen;}
+      50%  {background-color: slateblue;}
+      75%  {background-color: mediumvioletred;}
+      100% {background-color: crimson;}
+}
+
+@-webkit-keyframes colorchange {
+      0%   {background-color: lightblue;}
+      25%  {background-color: springgreen;}
+      50%  {background-color: slateblue;}
+      75%  {background-color: mediumvioletred;}
+      100% {background-color: crimson;}
+}
+
+@keyframes move {
+    0%   {left:0px; top:0px;}
+    20%  {left:250px; top:0px;}
+    40%  {left:250px; top:200px;}
+    60%  {left:-250px; top:200px;}
+    80%  {left:-250px; top:0px;}
+    100% {left:0px; top:0px;}
+
+@-webkit-keyframes move {
+    0%   {left:0px; top:0px;}
+    20%  {left:250px; top:0px;}
+    40%  {left:250px; top:200px;}
+    60%  {left:-250px; top:200px;}
+    80%  {left:-250px; top:0px;}
+    100% {left:0px; top:0px;}
+
+} 
