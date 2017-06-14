@@ -1,9 +1,22 @@
-﻿body {
-animation: colorchange 5s;
--webkit-animation: colorchange 5s;
+body {
+animation: colorchange 5s infinite;
+-webkit-animation: colorchange 5s infinite;
 }
 
 div {
+position: relative;
+animation-name: move;
+animation-duration: 5s; 
+-webkit-animation: move; 
+-webkit-animation-duration: 5s; 
+
+font-family: impact, verdana, sans-serif; 
+text-align: center; 
+letter-spacing: 0.08em;
+text-transform: uppercase;
+font-size: 72px;
+}
+#divme {
 position: relative;
 animation-name: move;
 animation-duration: 5s; 

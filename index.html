@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>BOBYAAA</title>
@@ -17,9 +17,23 @@
   <audio autoplay>
     <source src="beats.mp3" type="audio/mpeg">
   </audio>
-  <div>
+  <div id = "divme">
     <h1>bobyaaa</h1> 
     <p>Let's do this.</p>
   </div>
+        <script>
+        var count = 72;
+        var x = setInterval(function() {
+            if (count < 80) {
+                count = count * 1.1;
+            } else {
+                count = count / 1.1;
+            }
+            var c = count + "px";
+            document.getElementById("divme").style.fontSize = c;
+            console.log(count);
+        }, 680);
+
+    </script>
 </body>
 </html>
